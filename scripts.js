@@ -1,7 +1,7 @@
 var products = [
   {
     photo: "img/big-mac.png",
-    name: "Big Mac",
+    name: "Krabby Burger",
     price: 5.99,
     active: false,
     quantity: 1,
@@ -65,7 +65,8 @@ var products = [
 ];
 const SelfServiceMachine = {
   data() {
-    return { message: "Hello World" };
+    console.log(products);
+    return { products: products };
   },
 };
 
