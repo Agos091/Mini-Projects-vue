@@ -27,10 +27,10 @@ The **Self Service Machine** simulates a self-order system like those used in re
 1. Clone this repository:
    ```bash
    git clone https://github.com/Agos091/mini-projects-vue.git
+   ```
    Open the project in your preferred code editor.
    Run the index.html file in your browser using a local server (you can use the Live Server extension in VS Code).
    Access the self-service system and explore its functionalities!
-   ```
 
 🔍 Recommended Tools:
 Vue Dev Tools: We highly recommend using the Vue Dev Tools to inspect and debug the Vue components in your browser. It provides a user-friendly interface for tracking the state, events, and structure of your Vue app.
