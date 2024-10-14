@@ -17,22 +17,31 @@
     <main id="app">
       <section class="items">
         <h4>Pick Your Items</h4>
-        <div v-for="product in products" class="product">
+        <div
+          v-for="product in products"
+          class="product"
+          @click="product.active = !product.active"
+          :class="{selected : product.active}"
+        >
           <div class="photo">
             <img :src="product.photo" />
           </div>
           <div class="description">
             <span class="name">{{product.name}}</span>
             <span class="price">{{product.price}}</span>
-            <div class="quantity-area">
-              <button>-</button>
+            <div class="quantity-area" v-if="product.active">
+              <button
+                @click.stop="product.quantity > 0 ? product.quantity-- : null"
+              >
+                -
+              </button>
               <span class="quantity">{{product.quantity}}</span>
-              <button>+</button>
+              <button @click.stop="product.quantity++">+</button>
             </div>
           </div>
         </div>
       </section>
-      <section class="summary">
+      <section class="summary" v-if="total()>0">
         <strong>Resumo do pedido</strong>
         <table>
           <thead>
@@ -42,14 +51,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1x Big Mac</td>
-              <td>5.99</td>
+            <tr v-for="product in products">
+              <template v-if="product.active">
+                <td>{{product.quantity + 'x' + product.name}}</td>
+                <td>{{(product.quantity * product.price).toFixed(2)}}</td>
+              </template>
             </tr>
 
             <tr>
               <th>Total</th>
-              <th>5.99</th>
+              <th>{{(total()).toFixed(2)}}</th>
             </tr>
           </tbody>
         </table>

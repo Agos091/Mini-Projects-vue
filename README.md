@@ -4,9 +4,9 @@ This repository contains a collection of small projects developed with **Vue.js*
 
 ## 📂 Current Projects
 
-### 1. 🍔 Self Service Machine (McDonald's Self-Order System)
+### 1. 🍔🦀 Self Service Machine (Krusty Krab Self-Order System)
 
-The **Self Service Machine** simulates a self-order system like those used in restaurants such as McDonald's. In this project, the user can view available products, adjust quantities, and see the order summary. This is the first project in the collection and was developed with the following features:
+The **Self Service Machine** simulates a self-service system like those used in restaurants like McDonald's, but at the bottom of the sea. In this project, the user can view available products, adjust quantities and see the order summary. This is the first project in the collection and was developed with the following features:
 
 #### 🔧 Features:
 

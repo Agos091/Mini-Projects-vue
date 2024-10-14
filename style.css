@@ -1,102 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
 body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-image: url("./img/Krusty_Krab_Interior.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 main > section.items h4 {
-    text-align: center;
-    margin-top: 0;
-    width: 100%;
+  font-family: "Luckiest Guy", cursive;
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+  color: #8b4513;
+  font-weight: bold;
+  font-size: 3em;
 }
+
 main {
-    display: flex;
-    justify-content: center;
-    align-items:flex-start;
-    flex-wrap: wrap;
-    padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 main > section.items {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid lightgrey;
-    padding: 20px;
-    max-width: 500px;
-    min-width: 300px;
-    justify-content: center;
-    
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #d2b48c;
+  background-color: rgba(255, 228, 181, 0.8);
+  padding: 20px;
+  max-width: 500px;
+  min-width: 300px;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 section.items .product {
-    border: 1px solid lightgrey;
-    margin: 6px;
-    flex: 0 0 calc(33.333% - 24px);
-    cursor: pointer;
-    text-align: center;
+  border: 2px solid #d2691e;
+  margin: 6px;
+  flex: 0 0 calc(33.333% - 24px);
+  cursor: pointer;
+  text-align: center;
+  background-color: #ffe4b5;
 }
 
 section.items .product.selected {
-    border: 2px solid rgb(29, 134, 233);
-
+  border: 3px solid rgb(29, 134, 233);
+  background-color: rgba(135, 206, 250, 0.2);
 }
 
 section.items .photo img {
-    max-width: 90px;
+  max-width: 90px;
+  width: 100px;
+  height: 100px;
 }
 
 section.items .description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 11px;
-    line-height: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2f4f4f;
 }
 
-section.items  .description .price {
-    font-weight: bold;
-    margin: 4px auto;
+section.items .description .price {
+  font-weight: bold;
+  margin: 4px auto;
+  color: #8b0000;
 }
 
-section.items  .description .quantity-area {
-    margin: 8px auto;
-    height: 14px;
+section.items .description .quantity-area {
+  margin: 8px auto;
+  height: 14px;
 }
 
-section.items  .description .quantity-area button {
-    width: 16px;
-    height: 16px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+section.items .description .quantity-area button {
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700;
+  color: #000;
+  border: 1px solid #daa520;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
-section.items  .description .quantity-area .quantity {
-    font-weight: bold;
-    margin: 0 4px;
+section.items .description .quantity-area .quantity {
+  font-weight: bold;
+  margin: 0 6px;
+  color: #4b0082;
 }
-
 
 section.summary {
-    background-color: rgb(245, 245, 245);
-    padding: 20px;
-    min-height: 200px;
-    min-width: 200px;
-    text-align: center;
+  background-color: rgba(240, 255, 255, 0.9);
+  padding: 20px;
+  min-height: 200px;
+  min-width: 200px;
+  text-align: center;
+  border: 2px solid #2e8b57;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 section.summary table {
-    width: 100%;
-    padding-top: 12px;
-    font-size: 11px;
-    margin: auto;
+  width: 100%;
+  padding-top: 12px;
+  font-size: 12px;
+  margin: auto;
 }
 
 section.summary table tbody tr:last-of-type th {
-    border-top: 1px solid black;
-    padding-top: 4px;
+  border-top: 2px solid #000;
+  padding-top: 4px;
+  height: 100%;
 }
-
-
-

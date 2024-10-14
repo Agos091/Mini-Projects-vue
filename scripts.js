@@ -8,56 +8,56 @@ var products = [
   },
   {
     photo: "img/mc-chicken.png",
-    name: "Mc Chicken",
+    name: "Bob Chicken",
     price: 4.99,
     active: false,
     quantity: 1,
   },
   {
-    photo: "img/double-cb.png",
-    name: "Double Cheese Burger",
-    price: 2.99,
+    photo: "img/pizza.png",
+    name: "Pizza",
+    price: 5.99,
     active: false,
     quantity: 1,
   },
   {
     photo: "img/fries.png",
-    name: "Batata frita",
+    name: "Fries",
     price: 2.99,
     active: false,
     quantity: 1,
   },
   {
     photo: "img/nuggets.png",
-    name: "Mc Nuggets",
+    name: "Nuggets",
     price: 3.49,
     active: false,
     quantity: 1,
   },
   {
     photo: "img/salad.png",
-    name: "Salada",
+    name: "Salad",
     price: 2.79,
     active: false,
     quantity: 1,
   },
   {
     photo: "img/cola.png",
-    name: "Coca Cola",
+    name: "Kelp Shake",
     price: 1.99,
     active: false,
     quantity: 1,
   },
   {
     photo: "img/lipton.png",
-    name: "Ice Tea",
+    name: "Soda",
     price: 1.99,
     active: false,
     quantity: 1,
   },
   {
     photo: "img/water.png",
-    name: "Água",
+    name: "Water",
     price: 1.49,
     active: false,
     quantity: 1,
@@ -65,8 +65,18 @@ var products = [
 ];
 const SelfServiceMachine = {
   data() {
-    console.log(products);
     return { products: products };
+  },
+  methods: {
+    total: function () {
+      var total = 0;
+      this.products.forEach(function (item) {
+        if (item.active) {
+          total += item.price * item.quantity;
+        }
+      });
+      return total;
+    },
   },
 };
 
