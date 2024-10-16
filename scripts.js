@@ -63,9 +63,21 @@ var products = [
     quantity: 1,
   },
 ];
+var payments = [
+  {
+    photo_payment: "img/cash.png",
+    name_payment: "Cash",
+    active_payment: false,
+  },
+  {
+    photo_payment: "img/card.png",
+    name_payment: "Credit Card",
+    active_payment: false,
+  },
+];
 const SelfServiceMachine = {
   data() {
-    return { products: products };
+    return { products: products, payments: payments, showPopup: false };
   },
   methods: {
     total: function () {
@@ -76,6 +88,12 @@ const SelfServiceMachine = {
         }
       });
       return total;
+    },
+    confirmOrder: function () {
+      this.showPopup = true;
+    },
+    closePopup: function () {
+      this.showPopup = false;
     },
   },
 };

@@ -42,28 +42,67 @@
         </div>
       </section>
       <section class="summary" v-if="total()>0">
-        <strong>Resumo do pedido</strong>
+        <strong>Order summary</strong>
         <table>
           <thead>
             <tr>
-              <th>Item</th>
-              <th>Total</th>
+              <th>Item:</th>
+              <th>Total:</th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="product in products">
               <template v-if="product.active">
-                <td>{{product.quantity + 'x' + product.name}}</td>
-                <td>{{(product.quantity * product.price).toFixed(2)}}</td>
+                <td>{{ product.quantity + 'x' + product.name }}</td>
+                <td>{{ (product.quantity * product.price).toFixed(2) }}</td>
               </template>
             </tr>
-
             <tr>
               <th>Total</th>
-              <th>{{(total()).toFixed(2)}}</th>
+              <th>{{ total().toFixed(2) }}</th>
             </tr>
           </tbody>
         </table>
+        <button @click.stop="confirmOrder" class="button-payment">
+          Confirm Order
+        </button>
+        <div v-if="showPopup" class="popup-overlay">
+          <div class="popup">
+            <h3>Confirm Order</h3>
+            <p>Total Price: <strong>{{total().toFixed(2)}}</strong></p>
+            <p>Choose your payment method:</p>
+            <div v-for="payment in payments" class="payment-method">
+              <div class="photo_payment">
+                <img :src="payment.photo_payment" alt="Payment method" />
+              </div>
+              <span>{{payment.name_payment}}</span>
+              <input
+                type="radio"
+                :value="payment.name_payment"
+                v-model="selectedPayment"
+              />
+            </div>
+            <button @click="finalizeOrder" class="button-Popup">
+              Confirmar
+            </button>
+            <button @click="closePopup" class="button-Popup">Cancelar</button>
+          </div>
+        </div>
+        <!-- <div
+          class="payment"
+          v-for="payment in payments"
+          @click="payments.forEach(p => p.active_payment = false); payment.active_payment = true"
+          :class="{ selected: payment.active_payment }"
+        >
+          <img :src="payment.photo_payment" />
+          <span>{{ payment.name_payment }}</span>
+        </div>
+        <div v-if="payments.some(p => p.active_payment)">
+          <p>
+            <strong>Selected payment method: </strong>{{ payments.find(p =>
+            p.active_payment).name_payment }}
+          </p>
+        </div> -->
       </section>
     </main>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

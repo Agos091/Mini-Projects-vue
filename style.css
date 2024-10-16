@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@font-face {
+  font-family: "bobFont";
+  src: url("./fonts/bob.ttf");
+}
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Spongeboy Me Bob", "Open Sans", sans-serif;
   background-image: url("./img/Krusty_Krab_Interior.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +14,7 @@ body {
 }
 
 main > section.items h4 {
-  font-family: "Luckiest Guy", cursive;
+  font-family: bobFont;
   text-align: center;
   margin-top: 0;
   width: 100%;
@@ -29,6 +32,7 @@ main {
 }
 
 main > section.items {
+  font-family: bobFont;
   display: flex;
   flex-wrap: wrap;
   border: 2px solid #d2b48c;
@@ -101,6 +105,8 @@ section.items .description .quantity-area .quantity {
 }
 
 section.summary {
+  font-family: bobFont;
+  font-size: 15px;
   background-color: rgba(240, 255, 255, 0.9);
   padding: 20px;
   min-height: 200px;
@@ -109,12 +115,13 @@ section.summary {
   border: 2px solid #2e8b57;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
 }
 
 section.summary table {
   width: 100%;
   padding-top: 12px;
-  font-size: 12px;
+  font-size: 30px;
   margin: auto;
 }
 
@@ -122,4 +129,61 @@ section.summary table tbody tr:last-of-type th {
   border-top: 2px solid #000;
   padding-top: 4px;
   height: 100%;
+}
+
+section .button-payment {
+  font-size: 20px;
+  font-family: bobFont;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section .button-Popup {
+  font-family: bobFont;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.payment-method {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.payment-method img {
+  width: 140px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.popup {
+  background-color: rgba(240, 255, 255, 0.9);
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #2e8b57;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.popup h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.popup p {
+  font-size: 20px;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
