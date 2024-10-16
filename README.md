@@ -44,3 +44,5 @@ Stay tuned for more! 🌟
 Connect with me on [LinkedIn](https://www.linkedin.com/in/agos-dalcin-rufino-a9913821a/).
 🤝 Contributions
 Contributions are welcome! If you have any suggestions or want to collaborate, feel free to open an issue or submit a pull request.
+
+![Photo of project 1. 🍔🦀 Self Service Machine (Krusty Krab Self-Order System)](./img/project.png)
