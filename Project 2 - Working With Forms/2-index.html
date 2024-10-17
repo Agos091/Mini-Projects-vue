@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="2-style.css" />
+    <title>Spotify Song Search</title>
+  </head>
+
+  <body>
+    <img
+      src="./2-img/nosoulforsale.png"
+      alt="No Soul for Sale"
+      class="background-image-left"
+    />
+    <img
+      src="./2-img/clown.png"
+      alt="No Soul for Sale"
+      class="background-image-right"
+    />
+    <main id="app">
+      <h1>Search Track</h1>
+
+      <section class="search-song">
+        <label for="songName">Track Name:</label>
+        <input type="text" id="songName" v-model="songName" />
+        <input type="button" value="Search Track" @click="searchASong()" />
+      </section>
+      <section class="song-info" v-if="songInfo">
+        <h2>{{ songInfo.name }}</h2>
+        <img
+          :src="songInfo.album.images[0].url"
+          alt="Album Cover"
+          v-if="songInfo.album.images.length > 0"
+        />
+        <p>Album: {{ songInfo.album.name }}</p>
+        <p>
+          Artist(s): {{ songInfo.artists.map(artist => artist.name).join(', ')
+          }}
+        </p>
+        <p>
+          Duration: {{ Math.floor(songInfo.duration_ms / 60000) }} min {{
+          ((songInfo.duration_ms % 60000) / 1000).toFixed(0) }} sec
+        </p>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="2-scripts.js"></script>
+  </body>
+</html>

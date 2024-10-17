@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+main {
+  background-color: rgba(17, 17, 17, 0.9);
+  padding: 50px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+  text-align: center;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #ff0000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+section.search-song {
+  margin-bottom: 30px;
+}
+
+section.search-song label {
+  font-size: 1.5em;
+  display: block;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+section.search-song input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 1em;
+  background-color: #111;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+section.search-song input[type="button"] {
+  background-color: #ff0000;
+  color: #000;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+section.search-song input[type="button"]:hover {
+  background-color: #cc0000;
+}
+
+section.song-info {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+section.song-info h2 {
+  font-size: 3em;
+  color: #ff0000;
+  margin-bottom: 15px;
+}
+
+section.song-info img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+section.song-info p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.background-image-left,
+.background-image-right {
+  position: absolute;
+  top: 40%;
+  width: 150px;
+  height: auto;
+  z-index: 1;
+}
+.background-image-left {
+  left: 90px;
+}
+
+.background-image-right {
+  right: 100px;
+}
