@@ -22,6 +22,34 @@ The **Self Service Machine** simulates a self-service system like those used in 
 - **HTML5** and **CSS3** for structure and styling
 - **JavaScript** for logic and state management
 
+### 2. 🎧 Spotify Song Search
+
+The **Spotify Song Search** allows users to search for song information using the Spotify API. This project fetches data such as the song's name, album, artist(s), duration, and popularity based on user input. It provides a dynamic and interactive interface to explore Spotify's music database.
+
+#### 🔧 Features:
+
+- **Vue.js 3** for dynamic rendering and API integration.
+- Integration with the **Spotify API** for real-time song information retrieval.
+- A responsive input form where users enter the song name to search.
+- Display of detailed song information, including:
+  - Song name
+  - Album name
+  - Artists
+  - Duration (in minutes and seconds)
+  - Popularity score
+  - Album cover image
+
+#### 🛠️ Technologies Used:
+
+- **Vue.js 3** via CDN
+- **HTML5** and **CSS3** for responsive structure and styling
+- **JavaScript** for API calls and logic handling
+- **Spotify API** for accessing song data
+
+#### ⚠️ Important Note:
+
+To run this project, you need to create your own Spotify API credentials (Client ID and Client Secret). If you prefer, you can use my API credentials—just send me a message on my social media profiles [Profile](https://github.com/Agos091), which are linked on my [LinkedIn](https://www.linkedin.com/in/agos-dalcin-rufino-a9913821a/).
+
 ## 🖥️ How to Run the Project:
 
 1. Clone this repository:
@@ -45,5 +73,6 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/agos-dalcin-rufino-a99
 🤝 Contributions
 Contributions are welcome! If you have any suggestions or want to collaborate, feel free to open an issue or submit a pull request.
 
-A small preview project 1. 🍔🦀:
-![Photo of project 1. 🍔🦀 Self Service Machine (Krusty Krab Self-Order System)](./img/project.png)
+A small preview projects:
+![Photo of project 1. 🍔🦀 Self Service Machine (Krusty Krab Self-Order System)](./Prints/project-1.png)
+![Photo of project 2. 🎧 Spotify Song Search (Spotify Song Search)](./Prints/project-2.png)

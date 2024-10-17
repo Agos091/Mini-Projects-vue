@@ -1,6 +1,6 @@
 async function getSpotifyToken() {
-  const clientId = "bda763f02206462db553896d3e4dbd59";
-  const clientSecret = "9c0847eb0e3946c5af677a431b4b1bf0";
+  const clientId = "SUA_CLIENT_ID";
+  const clientSecret = "SUA_CLIENT_SECRET";
 
   const response = await fetch("https://accounts.spotify.com/api/token", {
     method: "POST",
@@ -40,8 +40,8 @@ async function searchSongs(songName) {
 const handlingForms = {
   data() {
     return {
-      songName: "", // Nome da música que o usuário digita
-      songInfo: null, // Informações da música
+      songName: "",
+      songInfo: null,
     };
   },
   methods: {
