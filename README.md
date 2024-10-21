@@ -50,6 +50,23 @@ The **Spotify Song Search** allows users to search for song information using th
 
 To run this project, you need to create your own Spotify API credentials (Client ID and Client Secret). If you prefer, you can use my API credentials—just send me a message on my social media profiles [Profile](https://github.com/Agos091), which are linked on my [LinkedIn](https://www.linkedin.com/in/agos-dalcin-rufino-a9913821a/).
 
+### 3. ✅ Todo App
+
+The **Todo App** is a simple task management application where users can add tasks, mark them as completed, and manage their list of todos. This project demonstrates the use of Vue.js for data binding, state management, and interaction with the browser's local storage.
+
+#### 🔧 Features:
+
+- **Vue.js 3** for dynamic rendering and state management.
+- Input field for users to add new tasks.
+- A list displaying tasks, with the ability to mark them as done.
+- Tasks are saved in the browser's **local storage** so they persist even after refreshing the page.
+
+#### 🛠️ Technologies Used:
+
+- **Vue.js 3** via CDN
+- **HTML5** and **CSS3** for styling and layout
+- **JavaScript** for logic and local storage management
+
 ## 🖥️ How to Run the Project:
 
 1. Clone this repository:

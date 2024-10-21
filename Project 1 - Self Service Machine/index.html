@@ -88,21 +88,6 @@
             <button @click="closePopup" class="button-Popup">Cancelar</button>
           </div>
         </div>
-        <!-- <div
-          class="payment"
-          v-for="payment in payments"
-          @click="payments.forEach(p => p.active_payment = false); payment.active_payment = true"
-          :class="{ selected: payment.active_payment }"
-        >
-          <img :src="payment.photo_payment" />
-          <span>{{ payment.name_payment }}</span>
-        </div>
-        <div v-if="payments.some(p => p.active_payment)">
-          <p>
-            <strong>Selected payment method: </strong>{{ payments.find(p =>
-            p.active_payment).name_payment }}
-          </p>
-        </div> -->
       </section>
     </main>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
