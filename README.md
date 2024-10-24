@@ -93,3 +93,4 @@ Contributions are welcome! If you have any suggestions or want to collaborate, f
 A small preview projects:
 ![Photo of project 1. 🍔🦀 Self Service Machine (Krusty Krab Self-Order System)](./Prints/project-1.png)
 ![Photo of project 2. 🎧 Spotify Song Search (Spotify Song Search)](./Prints/projec-2.png)
+![Photo of project 2. 🎧 Spotify Song Search (Spotify Song Search)](./Prints/projec-3.png)

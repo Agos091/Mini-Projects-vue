@@ -1,23 +1,24 @@
-var todos = [
-  {
-    work: "teste",
-    done: true,
-  },
-  {
-    work: "Salve",
-    done: true,
-  },
-  {
-    work: "top",
-    done: false,
-  },
-];
 const todosApp = {
   data() {
     return {
-      todos: window.todos,
-      newTodo: {},
+      todos: [],
+      newTodo: {
+        done: false,
+      },
     };
+  },
+  methods: {
+    addWork: function () {
+      if (this.newTodo.text) {
+        this.todos.push({
+          work: this.newTodo.text,
+          done: false,
+        });
+        this.newTodo.text = "";
+      } else {
+        alert("To-do text is required");
+      }
+    },
   },
 };
 Vue.createApp(todosApp).mount("#app");

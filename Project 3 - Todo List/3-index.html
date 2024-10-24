@@ -16,35 +16,41 @@
   <body>
     <main id="app">
       <section class="todo-list">
-        <h3>Lista de Tarefas</h3>
+        <h3>To-do List</h3>
 
         <div class="all-todos">
           <div
             v-for="todo in todos"
             class="single-todo"
             :class="{done : todo.done}"
+            @click="todo.done = !todo.done"
           >
             <p>{{todo.work}}</p>
           </div>
         </div>
 
-        <button class="clear">Limpar tudo</button>
+        <button class="clear" @click="todos=[]" v-if="todos.length">
+          Clear All
+        </button>
 
-        <input type="text" placeholder="Escreva uma nova tarefa..." />
-        <button class="add">Adicionar</button>
+        <input
+          type="text"
+          placeholder="Escreva uma nova tarefa..."
+          v-model="newTodo.text"
+        />
+        <button class="add" @click="addWork()">Add</button>
 
         <div class="instructions">
-          Instruções:
+          Instructions:
           <ul>
-            <li>
-              Clique no texto da tarefa para alternar entre feita / não feita
-            </li>
-            <li>Use o botão limpar tudo para remover todas as tarefas</li>
-            <li>Use o input para adicionar novas tarefas</li>
+            <li>Click on the task text to toggle between done/not done</li>
+            <li>Use the clear all button to remove all tasks</li>
+            <li>Use input to add new tasks</li>
           </ul>
         </div>
       </section>
     </main>
+
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="3-scripts.js"></script>
   </body>
