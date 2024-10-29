@@ -15,10 +15,25 @@ const todosApp = {
           done: false,
         });
         this.newTodo.text = "";
+        localStorage.setItem("todos", JSON.stringify(this.todos));
       } else {
         alert("To-do text is required");
       }
     },
   },
+  created() {
+    this.todos = localStorage.getItem("todos")
+      ? JSON.parse(localStorage.getItem("todos"))
+      : [];
+  },
+  watch: {
+    todos: {
+      handler(updatedTodos) {
+        localStorage.setItem("todos", JSON.stringify(updatedTodos));
+      },
+      deep: true,
+    },
+  },
 };
+
 Vue.createApp(todosApp).mount("#app");
