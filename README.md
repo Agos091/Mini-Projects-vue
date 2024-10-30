@@ -67,6 +67,25 @@ The **Todo App** is a simple task management application where users can add tas
 - **HTML5** and **CSS3** for styling and layout
 - **JavaScript** for logic and local storage management
 
+### 4. 🧩 Quiz Game (Trivia Gamer)
+
+The **Quiz Game** uses the Open Trivia Database API to fetch random trivia questions, allowing users to answer True or False questions and check the results. This project was developed using the Vue CLI to fully leverage Vue's modular setup.
+
+#### 🔧 Features:
+
+- **Vue.js 3** with **Vue CLI** for robust app structure.
+- **Axios** for API requests to the Open Trivia Database API.
+- Interactive True/False question format and result feedback.
+
+#### 🛠️ Technologies Used:
+
+- **Vue.js 3** with **Vue CLI**
+- **Axios** for API requests
+- **Open Trivia Database API** for trivia questions
+- **HTML5** and **CSS3** for responsive design
+
+---
+
 ## 🖥️ How to Run the Project:
 
 1. Clone this repository:
@@ -91,6 +110,7 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/agos-dalcin-rufino-a99
 Contributions are welcome! If you have any suggestions or want to collaborate, feel free to open an issue or submit a pull request.
 
 A small preview projects:
-![Photo of project 1. 🍔🦀 Self Service Machine (Krusty Krab Self-Order System)](./Prints/project-1.png)
-![Photo of project 2. 🎧 Spotify Song Search (Spotify Song Search)](./Prints/projec-2.png)
-![Photo of project 2. 🎧 Spotify Song Search (Spotify Song Search)](./Prints/projec-3.png)
+![Photo of project 1.  Self Service Machine (Krusty Krab Self-Order System)](./Prints/project-1.png)
+![Photo of project 2.  Spotify Song Search (Spotify Song Search)](./Prints/projec-2.png)
+![Photo of project 3.  Spotify Song Search (Spotify Song Search)](./Prints/projec-3.png)
+![Photo of project 4.  Spotify Song Search (Spotify Song Search)](./Prints/projec-4.png)
