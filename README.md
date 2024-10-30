@@ -113,4 +113,4 @@ A small preview projects:
 ![Photo of project 1.  Self Service Machine (Krusty Krab Self-Order System)](./Prints/project-1.png)
 ![Photo of project 2.  Spotify Song Search (Spotify Song Search)](./Prints/projec-2.png)
 ![Photo of project 3.  Spotify Song Search (Spotify Song Search)](./Prints/projec-3.png)
-![Photo of project 4.  Spotify Song Search (Spotify Song Search)](./Prints/projec-4.png)
+![Photo of project 4.  Spotify Song Search (Spotify Song Search)](./Prints/project-4.png)
